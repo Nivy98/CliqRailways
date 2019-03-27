@@ -1,0 +1,84 @@
+#find_trains,#all_trains,#logout {
+
+	padding : 5px;
+	background-color : blue;
+	color : white;
+
+}
+#find_trains:hover,#all_trains:hover,#logout:hover{
+
+	background-color : green;
+	color : white;
+}
+
+input[type=date]::-webkit-inner-spin-button,
+input[type=date]::-webkit-outer-spin-button 
+{
+  -webkit-appearance: none;
+}
+
+#blink_text{
+	font-size: 18px;
+	text-align: center;
+	font-weight: bolder;
+	animation-duration: 600ms;
+	animation-name: blink;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	-webkit-animation: blink 400ms infinite ;
+
+}
+
+@keyframes blink {
+    from {
+        color:green;
+    }
+    to {
+        color:red;
+	}
+}
+@-webkit-keyframes blink {
+    from {
+        color:green;
+    }
+    to {
+        color:red;
+	}
+	
+}
+
+focus {
+	color : green;
+}
+
+
+#booking_form {
+	
+	width: 500px;
+    margin: 0 auto;
+	background-color : #f2f2f2;
+	border-style : double;
+	border-width : 5px;
+	border-radius : 5px;
+	text-align : center;
+	justify-content :center;
+}
+
+#available_trains_table, #all_trains_table,#suggested_trains_table {
+	border-collapse: collapse;
+	width: 50%;
+}
+
+#available_trains_table th, #available_trains_table td,  #all_trains_table th,  #all_trains_table td, #suggested_trains_table th,#suggested_trains_table td{
+	 border: 1px solid ;
+  	 padding: 24px;
+	 text-align : center;
+	 font-size: 16px;
+}
+
+#suggested_trains_table th,  #available_trains_table th, #all_trains_table th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: black;
+  color: white;
+}

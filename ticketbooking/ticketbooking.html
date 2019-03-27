@@ -1,0 +1,84 @@
+<html>
+	<link href="ticketbooking.css" rel="stylesheet" type="text/css">
+	<link href="autocomplete.css" rel="stylesheet" type="text/css"
+	<body>
+		<h3><center>Chennai Sub-Urban Ticket booking<center><button id="logout" style="float: right;margin-right: 30px;">LOGOUT</button></h3>
+		<p><center>Route Reference : Chengalpattu, Guduvancheri, Urapakkam, Vandalur, Perungulathur, Tambaram, Meenambakkam, Tirusulam, Palavanthangal, Guindy, Kodambakkam, Chennai Beach</center></p>
+		<h3 style="color : black";><center>Welcome <span id="welcome_user"></span>!</center></h3>
+		<p id="blink_text">Book Your Tickets</p>
+		<form id="booking_form" autocomplete="off" action="#">	
+			<div class="autocomplete">
+    			<p>Boarding :</p> <input id="from" type="text"  placeholder="Boarding place" style="width: 50%;padding:10px;">
+  			</div>
+			<br>
+		<input type="image" id="switch_stations" src="switch.png" height="48" width="48"/>
+			
+			<div class="autocomplete">
+    			<p>Reaching :</p> <input id="to" type="text"  placeholder="Destination place" style="width: 50%;padding:10px;">
+  			</div>
+
+			<p>Date     :</p> <input type="date" id="datepicker" required="required" onkeydown="return false;" style="width: 50%;padding:10px;"> <br>
+	
+			<p>Tickets  :</p> <input type="number" placeholder="1-6 passengers" id="passenger_count" style="width: 50%;padding:10px;"/> <br><br>
+			<div style="display : inline;">
+			<input type="button" id="find_trains" value="FIND TRAINS"/>
+			<input type="button" id="all_trains" value="SHOW ALL TRAINS"/>
+			</div>
+		<br><br>
+		</form>
+		<center>
+		<p id="from_error" style="display : none; color : red;">Invalid Boarding station</p>
+		<p id="to_error" style="display : none; color : red;">Invalid Reaching station</p>
+		<p id="fromto_error" style="display : none; color : red;">Boarding and Arriving places should not be same</p>
+		<p id="date_error" style="display : none; color : red;">Date invalid</p>
+		<p id="passenger_error" style="display : none; color : red;">Enter passengers between 1- 6</p>
+		<p id="available_train_error" style="display : none; color : red;">No Trains Available</p>
+		</center>
+		<br>
+		<center>
+			<table id="available_trains_table" cellpadding="50" width="600px" style="margin-left:250px;display : none;">
+			
+				<caption><h3><center>Available Trains</center></h3></caption><br>
+				<tr>
+					<th>Train No</th>
+					<th>Train Name</th>
+					<th>Arriving Time<br>(<span id="arrive_at"></span>)</th>
+					<th>Reaching Time <br>(<span id="destination_at"></span>)</th>
+					<th>No of Seats</th>
+				</tr>
+			</table>
+			
+			<table id="suggested_trains_table" cellpadding="50" width="600px" align = "center" style="display : none;">
+				
+				<caption><h3><center>Suggested Trains</center></h3></caption><br>
+				<tr>
+					<th>Train No</th>
+					<th>Train Name</th>
+					<th>Journey Date</th>
+					<th>Arriving Time<br>(<span id="suggested_arrive_at"></span>)</th>
+					<th>Reaching Time <br>(<span id="suggested_destination_at"></span>)</th>
+					<th>No of Seats</th>
+				</tr>
+			</table>
+		
+			<table id="all_trains_table" cellpadding="50" width="600px" style="margin-left : 240px; display : none;">
+
+				<caption><h3><center>Available Trains</center></h3></caption><br>
+				<tr>
+					<th>Train No</th>
+					<th>Train Name</th>
+					<th>Journey Date</th>
+					<th>Starting At</th>
+					<th>Ending At </th>
+				</tr>
+			</table>
+		</center>
+		<br><br><br>
+		
+<button>Nidheesh</button>
+	</body>
+
+	<script src="ticketbooking.js"></script>
+	<script src="autocomplete.js"></script>
+
+</html>

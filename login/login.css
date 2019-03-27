@@ -1,0 +1,45 @@
+input[type=text], input[type=password]{
+	border : 2px solid black;
+	border-radius : 4px;
+	padding : 10px;
+}
+
+body{
+	background-image: url("login_bg.jpg");
+}
+
+#welcome{
+margin-top: 200px;
+margin-left:1300px;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-size: 24px;
+font-style: oblique;
+color: antiquewhite;
+font-weight: bold;
+}
+
+#homepage_form {
+
+	margin-left:1160px;
+	width: 500px;
+	background-color : #f2f2f2;
+	border-style : double;
+	border-width : 5px;
+	border-radius : 5px;
+	text-align : center;
+
+}
+
+#login_button, #register_button{
+
+	text-align : center;
+	background-color : grey;
+	color : white;
+	padding : 5px;
+}
+
+#login_button:hover, #register_button:hover{
+
+	background-color : blue;
+}
+

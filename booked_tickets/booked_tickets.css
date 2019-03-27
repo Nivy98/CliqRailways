@@ -1,0 +1,31 @@
+#book_again_button, #booked_tickets_logout{
+
+	text-align : center;
+	background-color : blue;
+	color : white;
+	padding : 5px;
+}
+
+#book_again_button:hover, #booked_tickets_logout:hover{
+
+	background-color : green;
+}
+
+#booked_tickets_table {
+	border-collapse: collapse;
+	width: 50%;
+}
+
+#booked_tickets_table th, #booked_tickets_table td{
+	 border: 1px solid ;
+  	 padding: 24px;
+	 text-align : center;
+	 font-size: 16px;
+}
+
+#booked_Tickets_table th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  background-color: black;
+  color: white;
+}

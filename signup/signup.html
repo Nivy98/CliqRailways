@@ -1,0 +1,42 @@
+<html>
+	
+	<link href="signup.css" rel="stylesheet" type = "text/css">
+	<body>		
+		<p id="signup_text">SIGN-UP FORM</p>
+		<form id="signup_form" autocomplete="off" >
+			<h3>CLIQ RAILWAYS</h3><img src="train_logo.svg" style="height:75px;width:70px"/>
+
+			<p>User Name : <input type="text" id="username" style="width:200px;" placeholder = "Eg: john98"/>
+			<p id="username_error" style="display : none; color : red;">Enter valid username</p>
+			<p>Email : <input type="text" id="email" style="width:300px;" placeholder = "Enter standard mail with @ and ."/>
+			<p id="email_error" style="display : none; color : red;">Enter valid email</p>
+			<p id="already_registered_error" style="display : none; color : red;">Email already registered</p>
+			<p>Password : <input type="password" id="password" style="width:200px;" placeholder = "Min characters 8"/>
+			<p id="password_error" style="display : none; color : red;">Enter valid password</p>
+			<p>Confirm Password : <input type="password" id="confirm_password" style="width:200px;" placeholder = "Re-enter password"/>
+			<p id="confirm_password_error" style="display : none; color : red;">Passwords dont match</p>
+			<p>Age : <input type="number" id="age" style="width:200px;" placeholder = "Enter age between 3-120"/>
+			<p id="age_error" style="display : none; color : red;">Enter valid age</p>
+			<p>Phone : <input type="text" id="phone" style="width:200px;" placeholder = "Enter 10 digit numbers"/>
+			<p id="phone_error" style="display : none; color : red;">Enter valid Phone Number</p>
+			<p>Gender : <select id="gender">
+					<option selected value=0>Male</option>
+					<option value=1>Female</option>
+					<option value=2>Transgender</option>
+					</select>
+			<p id="gender_error" style="display : none; color : red;">Gender Invalid</p>
+			<br></br>
+			<input type="button" id="signup_button" value="SIGN UP"/> 
+			<input type="button" id="clear_button" value="CLEAR" />
+			<br></br></br>			
+
+		</form>
+	</body>
+	<script src="signup.js"></script>
+
+</html>
+
+
+
+
+

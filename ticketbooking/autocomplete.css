@@ -1,0 +1,37 @@
+.autocomplete {
+  position: relative;
+}
+
+input {
+ 
+  padding: 10px;
+  font-size: 16px;
+}
+
+
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid black;
+  width:50%;
+  margin: auto 124px;
+}
+
+.autocomplete-items div {
+
+  padding: 8px;
+  border-bottom: 1px solid ; 
+  background-color: white; 
+  color : black;
+}
+
+
+.autocomplete-items div:hover {
+  background-color: grey; 
+  color : white;
+}
+
+
+.autocomplete-active {
+  background-color: grey !important; 
+  color : white !important;
+}
